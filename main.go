@@ -15,7 +15,7 @@ func main() {
 
 		f := fib()
 
-		res := &response{Message: "Hello World"}
+		res := &response{Message: "Hello Universe!"}
 
 		for _, e := range os.Environ() {
 			pair := strings.Split(e, "=")
@@ -23,7 +23,7 @@ func main() {
 		}
 		sort.Strings(res.EnvVars)
 
-		for i := 1; i <= 90; i++ {
+		for i := 1; i <= 180; i++ {
 			res.Fib = append(res.Fib, f())
 		}
 
